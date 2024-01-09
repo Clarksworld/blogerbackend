@@ -1,0 +1,41 @@
+GET http://localhost:8080/api/content
+
+<> 2024-01-09T001119.200.json
+<> 2024-01-09T000506.404.json
+
+### get content by id
+GET http://localhost:8080/api/content/1
+
+### create content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Second content",
+  "desc": "our second official content",
+  "statue": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-01-09",
+  "dateUpdated": "2024-01-09",
+  "url": ""
+}
+
+### create content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+
+{
+  "id": 1 ,
+  "title": "Second content updated",
+  "desc": "our second official content",
+  "statue": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-01-09",
+  "dateUpdated": "2024-01-09",
+  "url": "https://mansnothot.com"
+}
+
+### create content
+DELETE http://localhost:8080/api/content/2
